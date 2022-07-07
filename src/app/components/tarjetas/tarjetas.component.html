@@ -1,0 +1,36 @@
+<div class="row vh-100 justify-content-center">
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+        <div *ngFor="let item of Items" class="col ">
+            <div (click)='verArtista(item)' class="card h-100 puntero" style="background-color: black;">
+                <img [src]="item.images|noImage" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;">{{item.name}}</h5>
+                    <span *ngFor="let artista of item.artists" class="badge bg-primary">{{item.name}}</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<p>--------------------------------------------------------------------------------------------------------</p>
+<div class="container">
+    <div class="row">
+        <div class=*ngFor="let item of Items">
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
+        </div>
+    </div>
+</div>
